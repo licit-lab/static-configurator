@@ -1,0 +1,33 @@
+<settings>
+    <generator>
+            <scala>100</scala>
+            <numberOfThreads>5</numberOfThreads>
+    </generator>
+    <emulator>
+        <type>ST</type>
+    </emulator>
+    <areaNode>
+    	<sensorType>2</sensorType>
+    	<!-- 0 = SINGLETRAVELTIME
+    	  1 = TOTALTRAVELTIME
+    	   2 = AGGTOTALTRAVELTIME -->
+    	<multipleNorthboundQueues>1</multipleNorthboundQueues>
+    	<!-- 0 = false, 1 = true -->
+    	<urlIn>tcp://localhost:61616</urlIn>
+
+        <urlOut>tcp://137.121.170.248:30340/</urlOut>
+    	<!-- <urlOut>tcp://137.121.170.248:30340</urlOut> -->
+   
+    </areaNode>
+    <Link>
+    	<interval>3</interval>
+        <!-- in minuti -->
+    	<startDateTime>06/09/2018 00:00:00</startDateTime>
+    	<msgType>3</msgType>
+    	<!-- 0 = false, 1 = true -->
+    </Link>
+    <Files>
+    	<links>final_links_updated.csv</links>
+    	<observations>final_all_observations.csv</observations>
+    </Files>
+</settings>
